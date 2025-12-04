@@ -15,3 +15,8 @@ fun readInput(name: String, separator: String) = readInput(name)
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+/**
+ * Converts true to 1 (one) and false to 0 (zero)
+ */
+fun Boolean.toInt() = if (this) 1 else 0
