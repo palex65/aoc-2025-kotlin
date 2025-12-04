@@ -3,6 +3,8 @@ import kotlin.io.path.Path
 import kotlin.io.path.readLines
 import kotlin.io.path.readText
 
+typealias Lines = List<String>
+
 /**
  * Reads lines from the given input txt file.
  */
