@@ -15,7 +15,6 @@ fun main() {
         return endState.splits
     }
 
-
     fun part2(input: List<String>): Long {
         val diagram = input.toCharMatrix()
         val splitters = diagram.findAll('^').groupBy { it.row }
