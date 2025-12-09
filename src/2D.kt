@@ -103,6 +103,10 @@ fun Limits.allPositions(): Sequence<Position> = sequence {
     for (row in 0..<rows) for (col in 0..<cols) yield(Position(row, col))
 }
 
+fun allPositionsOf(rows: IntRange, cols: IntRange): Sequence<Position> = sequence {
+    for (row in rows) for (col in cols) yield(Position(row, col))
+}
+
 /**
  * Executes a block for each position of a rectangle defined by the limits.
  */
